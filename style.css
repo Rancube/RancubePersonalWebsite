@@ -1,0 +1,52 @@
+:root {
+  --Color1: #121214;
+  --Color2: #1e1e24;
+  --Color3: #e4e6eb;
+  --Color4: #9a9a9f;
+  --Color5: #a855f7;
+  --Color6: #3b82f6;
+}
+
+body {
+  margin: auto 10px;
+  font-family: Arimo, sans-serif, Arial;
+  color: var(--Color3);
+  background-color: var(--Color1);
+}
+
+section {
+  background-color: var(--Color2);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 1.1rem;
+}
+
+header {
+  text-align: center;
+}
+
+header p {
+  font-size: 0.9rem;
+}
+
+ul:has(.github) {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.github {
+  list-style: none;
+}
+
+.github a {
+  background-color: #101411;
+  border-radius: 15px;
+  padding: 10px;
+  color: #f2f5f3;
+  text-decoration: none;
+}
